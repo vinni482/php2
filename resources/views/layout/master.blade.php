@@ -13,10 +13,10 @@
 	<div class='container'>
 		<ul class='nav nav-pills'>
 			<li>
-				<a href="{{url('home')}}">Home</a>
+				<a href="{{url('topic')}}">Topic</a>
 			</li>
 			<li>
-				<a href="{{url('addcountry')}}">Add New</a>
+				<a href="{{url('topic/create')}}">New Topic</a>
 			</li>
 			<li>
 
