@@ -11,21 +11,25 @@
 <body>
 	@section('menu')
 	<div class='container'>
-		<ul class='nav nav-pills'>
-			<li>
-				<a href="{{url('topic')}}">Topic</a>
-			</li>
-			<li>
-				<a href="{{url('topic/create')}}">New Topic</a>
-			</li>
-			<li>
+		<div class="row">
+			<ul class='nav nav-pills'>
+				<li>
+					<a href="{{url('topic')}}">Topic</a>
+				</li>
+				<li>
+					<a href="{{url('topic/create')}}">New Topic</a>
+				</li>
+				<li>
 
-			</li>
-		</ul>
-	</div>	
-	<div class='container col-lg-12 md-12 sm-12'>
+				</li>
+			</ul>
+		</div>
 		
-	@yield('content')
+	<div class="row">
+		<div class='container col-lg-12 md-12 sm-12'>		
+			@yield('content')
+		</div>
 	</div>
+</div>
 </body>
 </html>
