@@ -16,11 +16,11 @@
 				<li>
 					<a href="{{url('topic')}}">Topic</a>
 				</li>
-				<li>
+				<li {{$page == 'Add Topic'? 'class=active':''}}>
 					<a href="{{url('topic/create')}}">New Topic</a>
 				</li>
-				<li>
-
+				<li {{$page == 'AddBlock'? 'class=active':''}}>
+					<a href="{{url('block/create')}}">Add block</a>
 				</li>
 			</ul>
 		</div>

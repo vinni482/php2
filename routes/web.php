@@ -19,3 +19,5 @@ Route::get('/home', 'TestController@index');
 
 Route::resource('topic','TopicController');
 
+Route::resource('block','BlockController');
+
