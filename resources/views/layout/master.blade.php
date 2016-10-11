@@ -5,15 +5,16 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap-theme.min.css')}}">
-	<script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
+	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
 	<script type="text/javascript" src="{{asset('js/jquery-3.1.1.min.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
 </head>
 <body>
 	@section('menu')
 	<div class='container'>
 		<div class="row">
 			<ul class='nav nav-pills'>
-				<li>
+				<li {{$page == 'home'? 'class=active':''}}>
 					<a href="{{url('topic')}}">Topic</a>
 				</li>
 				<li {{$page == 'Add Topic'? 'class=active':''}}>
