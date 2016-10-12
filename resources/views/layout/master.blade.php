@@ -14,13 +14,13 @@
 	<div class='container'>
 		<div class="row">
 			<ul class='nav nav-pills'>
-				<li {{$page == 'home'? 'class=active':''}}>
+				<li>
 					<a href="{{url('topic')}}">Topic</a>
 				</li>
-				<li {{$page == 'Add Topic'? 'class=active':''}}>
+				<li>
 					<a href="{{url('topic/create')}}">New Topic</a>
 				</li>
-				<li {{$page == 'AddBlock'? 'class=active':''}}>
+				<li>
 					<a href="{{url('block/create')}}">Add block</a>
 				</li>
 			</ul>

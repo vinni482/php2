@@ -25,7 +25,16 @@
 		@if($id != 0)
 			@foreach($blocks as $b)
 				<div>
-					<h2>{{$b->title}}</h2>
+					<div>
+						<h2>{{$b->title}}</h2>
+						{!! Form::model($b, array('route'=>array('block.update',$b->id),'method'=>'PUT')) !!}
+						<a class="btn btn-xs btn-info" href="{{url('block/'.$b->id.'/edit')}}">Edit</a>
+						{!! Form::close() !!}
+						{!! Form::open(array('route'=>array('block.destroy',$b->id))) !!}
+						{!! Form::hidden('_method','DELETE') !!}
+						<button type='submit' class="btn btn-xs btn-info">Delete</button>
+						{!! Form::close() !!}
+					</div>
 					@if($b->imagePath != "")
 						<a href="{{url($b->imagePath)}}" target="_blank" class="wrap-image">
 							<img src="{{asset($b->imagePath)}}" height="100px" alt=""/>
